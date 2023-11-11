@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './styles.css';
 
 // Definir una lista de categorías
 const categorias = ["Urgente", "Media", "Baja"];
