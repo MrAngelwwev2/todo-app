@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import './styles.css';
+import './components/styles.css';
 
-// Definir una lista de categorías
 const categorias = ["Urgente", "Media", "Baja"];
 
 function App() {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState('');
   const [newDescription, setNewDescription] = useState('');
-  const [newCategory, setNewCategory] = useState(''); // Estado para la categoría
+  const [newCategory, setNewCategory] = useState('');
 
   const [filterCategory, setFilterCategory] = useState('');
 
@@ -77,7 +76,7 @@ function App() {
         value={newDescription}
         onChange={(e) => setNewDescription(e.target.value)}
       />
-      <select // Lista desplegable de categorías
+      <select
         value={newCategory}
         onChange={(e) => setNewCategory(e.target.value)}
       >
